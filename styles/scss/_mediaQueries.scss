@@ -1,0 +1,39 @@
+@media (max-width: 850px) {
+	#wrapper {
+		.container {
+			.main {
+				.right {
+					align-items: flex-end;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 750px) {
+	#wrapper {
+		.container {
+			width: 95%;
+			margin-top: 10px;
+
+			.search-menu {
+				padding: 0 15px;
+			}
+
+			.main {
+				flex-direction: column;
+				gap: 50px;
+				padding: 10px;
+
+				.left,
+				.right {
+					align-items: center;
+
+					.all-data {
+						align-items: center;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,123 @@
+@media (max-width: 850px) {
+  #wrapper .container .main .right {
+    align-items: flex-end;
+  }
+}
+@media (max-width: 750px) {
+  #wrapper .container {
+    width: 95%;
+    margin-top: 10px;
+  }
+  #wrapper .container .search-menu {
+    padding: 0 15px;
+  }
+  #wrapper .container .main {
+    flex-direction: column;
+    gap: 50px;
+    padding: 10px;
+  }
+  #wrapper .container .main .left,
+#wrapper .container .main .right {
+    align-items: center;
+  }
+  #wrapper .container .main .left .all-data,
+#wrapper .container .main .right .all-data {
+    align-items: center;
+  }
+}
+.search-menu {
+  margin-top: 20px;
+  display: flex;
+  padding: 0 50px;
+  gap: 10px;
+}
+.search-menu .search-field-box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+}
+.search-menu .search-field-box input {
+  width: 100%;
+  height: 30px;
+  padding: 0 20px;
+}
+.search-menu .search-btn-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-menu .search-btn-box button {
+  padding: 0 15px;
+  height: 35px;
+  cursor: pointer;
+  background-color: cornflowerblue;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.25);
+  transition: color 0.3s;
+  font-weight: bold;
+}
+.search-menu .search-btn-box button:hover {
+  color: darkslategrey;
+}
+
+.main {
+  padding: 50px 50px;
+  display: flex;
+}
+.main .left,
+.main .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main .left .all-data {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 1.2rem;
+}
+.main .left .all-data .data-box {
+  display: flex;
+  gap: 15px;
+}
+.main .left .all-data .data-box .loader-img {
+  width: 25px;
+  animation: rotation 1.5s infinite linear;
+}
+.main .right {
+  text-align: center;
+}
+.main .right #result-weather-text {
+  margin: 10px 0;
+  font-size: 1.3rem;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+/*# sourceMappingURL=styles.css.map */

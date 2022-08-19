@@ -1,0 +1,52 @@
+.main {
+	padding: 50px 50px;
+
+	display: flex;
+
+	.left,
+	.right {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.left {
+		.all-data {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			gap: 20px;
+			font-size: 1.2rem;
+
+			.data-box {
+				display: flex;
+				gap: 15px;
+
+				.loader-img {
+					width: 25px;
+					animation: rotation 1.5s infinite linear;
+				}
+			}
+		}
+	}
+
+	.right {
+		text-align: center;
+
+		#result-weather-text {
+			margin: 10px 0;
+			font-size: 1.3rem;
+		}
+	}
+}
+
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+	}
+}
