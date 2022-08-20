@@ -24,6 +24,15 @@
 				display: flex;
 				gap: 15px;
 
+				i {
+					width: 20px;
+				}
+
+				div {
+					display: flex;
+					gap: 17px;
+				}
+
 				.loader-img {
 					width: 25px;
 					animation: rotation 1.5s infinite linear;

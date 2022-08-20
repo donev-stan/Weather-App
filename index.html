@@ -10,6 +10,10 @@
     <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
     <script type="module" src="./scripts/index.js"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Weather App</title>
 </head>
 
@@ -36,32 +40,32 @@
                         </div>
 
                         <div class="data-box">
-                            <p>Current Temperature: </p>
-                            <p id="result-curr-temp"> <img src="./images/loader.png" alt="loader" class="loader-img">
-                            </p>
+                            <div><i class="fa-solid fa-temperature-half"></i> Current Temperature: </div>
+                            <div id="result-curr-temp"> <img src="./images/loader.png" alt="loader" class="loader-img">
+                            </div>
                         </div>
 
                         <div class="data-box">
-                            <div>Feels Like: </div>
+                            <div><i class="fa-solid fa-temperature-high"></i> Feels Like: </div>
                             <div id="result-feelslike-temp"> <img src="./images/loader.png" alt="loader"
                                     class="loader-img">
                             </div>
                         </div>
 
                         <div class="data-box">
-                            <div>Minimum Temperature: </div>
+                            <div><i class="fa-solid fa-temperature-arrow-down"></i> Minimum Temperature: </div>
                             <div id="result-min-temp"> <img src="./images/loader.png" alt="loader" class="loader-img">
                             </div>
                         </div>
 
                         <div class="data-box">
-                            <div>Maximum Temperature: </div>
+                            <div><i class="fa-solid fa-temperature-arrow-up"></i> Maximum Temperature: </div>
                             <div id="result-max-temp"> <img src="./images/loader.png" alt="loader" class="loader-img">
                             </div>
                         </div>
 
                         <div class="data-box">
-                            <div>Humidity: </div>
+                            <div><i class="fa-solid fa-droplet"></i> Humidity: </div>
                             <div id="result-humidity"> <img src="./images/loader.png" alt="loader" class="loader-img">
                             </div>
                         </div>
